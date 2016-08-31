@@ -1,0 +1,181 @@
+﻿<XtraSerializer version="1.0" application="TreeList">
+  <property name="#LayoutVersion" />
+  <property name="RootValue" type="System.Int32">0</property>
+  <property name="ImageIndexFieldName">ImageIndex</property>
+  <property name="KeyFieldName">ID</property>
+  <property name="ParentFieldName">ParentID</property>
+  <property name="PreviewFieldName" />
+  <property name="OptionsView" isnull="true" iskey="true">
+    <property name="ShowIndentAsRowStyle">true</property>
+    <property name="EnableAppearanceOddRow">true</property>
+    <property name="ShowAutoFilterRow">true</property>
+  </property>
+  <property name="OptionsBehavior" isnull="true" iskey="true">
+    <property name="Editable">false</property>
+    <property name="AllowIncrementalSearch">true</property>
+    <property name="ExpandNodesOnIncrementalSearch">true</property>
+    <property name="EnableFiltering">true</property>
+    <property name="ReadOnly">true</property>
+  </property>
+  <property name="OptionsMenu" isnull="true" iskey="true">
+    <property name="ShowConditionalFormattingItem">true</property>
+  </property>
+  <property name="BorderStyle">Default</property>
+  <property name="ShowButtonMode">ShowForFocusedCell</property>
+  <property name="IndicatorWidth">-1</property>
+  <property name="PreviewLineCount">1</property>
+  <property name="RowHeight">-1</property>
+  <property name="ColumnPanelRowHeight">-1</property>
+  <property name="BandPanelRowHeight">-1</property>
+  <property name="FooterPanelHeight">-1</property>
+  <property name="BestFitVisibleOnly">false</property>
+  <property name="HorzScrollVisibility">Auto</property>
+  <property name="HorzScrollStep">3</property>
+  <property name="VertScrollVisibility">Auto</property>
+  <property name="CustomizationFormBounds">@1,X=0@1,Y=0@1,Width=0@1,Height=0</property>
+  <property name="Columns" iskey="true" value="3">
+    <property name="Item1" isnull="true" iskey="true">
+      <property name="OptionsColumn" isnull="true" iskey="true">
+        <property name="ReadOnly">true</property>
+        <property name="AllowEdit">false</property>
+      </property>
+      <property name="OptionsFilter" isnull="true" iskey="true">
+        <property name="AutoFilterCondition">Contains</property>
+      </property>
+      <property name="Caption">Key name</property>
+      <property name="ToolTip" />
+      <property name="CustomizationCaption" />
+      <property name="FieldName">Key name</property>
+      <property name="Name">treeListColumn1</property>
+      <property name="AllowIncrementalSearch">true</property>
+      <property name="Fixed">None</property>
+      <property name="ColumnEditName" />
+      <property name="ShowButtonMode">Default</property>
+      <property name="VisibleIndex">0</property>
+      <property name="Visible">true</property>
+      <property name="ImageIndex">-1</property>
+      <property name="ImageAlignment">Near</property>
+      <property name="Width">325</property>
+      <property name="SortOrder">None</property>
+      <property name="SortIndex">-1</property>
+      <property name="SortMode">Default</property>
+      <property name="FilterMode">Value</property>
+      <property name="ShowUnboundExpressionMenu">false</property>
+      <property name="Format" isnull="true" iskey="true">
+        <property name="FormatString" />
+        <property name="FormatType">None</property>
+      </property>
+      <property name="MinWidth">49</property>
+      <property name="RowFooterSummary">None</property>
+      <property name="SummaryFooter">None</property>
+      <property name="AllNodesSummary">false</property>
+      <property name="RowFooterSummaryStrFormat">{0}</property>
+      <property name="SummaryFooterStrFormat">{0}</property>
+      <property name="Tag" isnull="true" />
+      <property name="UnboundType">Bound</property>
+      <property name="UnboundExpression" />
+      <property name="RowIndex">0</property>
+      <property name="RowCount">1</property>
+    </property>
+    <property name="Item2" isnull="true" iskey="true">
+      <property name="OptionsFilter" isnull="true" iskey="true">
+        <property name="AutoFilterCondition">Contains</property>
+      </property>
+      <property name="Caption"># values</property>
+      <property name="ToolTip" />
+      <property name="CustomizationCaption" />
+      <property name="FieldName">ValueCount</property>
+      <property name="Name">treeListColumn3</property>
+      <property name="AllowIncrementalSearch">true</property>
+      <property name="Fixed">None</property>
+      <property name="ColumnEditName" />
+      <property name="ShowButtonMode">Default</property>
+      <property name="VisibleIndex">1</property>
+      <property name="Visible">true</property>
+      <property name="ImageIndex">-1</property>
+      <property name="ImageAlignment">Near</property>
+      <property name="Width">75</property>
+      <property name="SortOrder">None</property>
+      <property name="SortIndex">-1</property>
+      <property name="SortMode">Default</property>
+      <property name="FilterMode">Value</property>
+      <property name="ShowUnboundExpressionMenu">false</property>
+      <property name="Format" isnull="true" iskey="true">
+        <property name="FormatString" />
+        <property name="FormatType">None</property>
+      </property>
+      <property name="MinWidth">20</property>
+      <property name="RowFooterSummary">None</property>
+      <property name="SummaryFooter">None</property>
+      <property name="AllNodesSummary">false</property>
+      <property name="RowFooterSummaryStrFormat">{0}</property>
+      <property name="SummaryFooterStrFormat">{0}</property>
+      <property name="Tag" isnull="true" />
+      <property name="UnboundType">Bound</property>
+      <property name="UnboundExpression" />
+      <property name="RowIndex">0</property>
+      <property name="RowCount">1</property>
+    </property>
+    <property name="Item3" isnull="true" iskey="true">
+      <property name="OptionsFilter" isnull="true" iskey="true">
+        <property name="AutoFilterCondition">Contains</property>
+      </property>
+      <property name="Caption">Last write timestamp</property>
+      <property name="ToolTip" />
+      <property name="CustomizationCaption" />
+      <property name="FieldName">Last write timestamp</property>
+      <property name="Name">treeListColumn2</property>
+      <property name="AllowIncrementalSearch">true</property>
+      <property name="Fixed">None</property>
+      <property name="ColumnEditName" />
+      <property name="ShowButtonMode">Default</property>
+      <property name="VisibleIndex">2</property>
+      <property name="Visible">true</property>
+      <property name="ImageIndex">-1</property>
+      <property name="ImageAlignment">Near</property>
+      <property name="Width">125</property>
+      <property name="SortOrder">None</property>
+      <property name="SortIndex">-1</property>
+      <property name="SortMode">Default</property>
+      <property name="FilterMode">Value</property>
+      <property name="ShowUnboundExpressionMenu">false</property>
+      <property name="Format" isnull="true" iskey="true">
+        <property name="FormatString" />
+        <property name="FormatType">None</property>
+      </property>
+      <property name="MinWidth">20</property>
+      <property name="RowFooterSummary">None</property>
+      <property name="SummaryFooter">None</property>
+      <property name="AllNodesSummary">false</property>
+      <property name="RowFooterSummaryStrFormat">{0}</property>
+      <property name="SummaryFooterStrFormat">{0}</property>
+      <property name="Tag" isnull="true" />
+      <property name="UnboundType">Bound</property>
+      <property name="UnboundExpression" />
+      <property name="RowIndex">0</property>
+      <property name="RowCount">1</property>
+    </property>
+  </property>
+  <property name="Caption" />
+  <property name="CaptionHeight">-1</property>
+  <property name="EnableDynamicLoading">true</property>
+  <property name="TreeLineStyle">Percent50</property>
+  <property name="TreeLevelWidth">18</property>
+  <property name="Appearance" isnull="true" iskey="true">
+    <property name="OddRow" iskey="true" value="OddRow">
+      <property name="Options" isnull="true" iskey="true">
+        <property name="UseBackColor">true</property>
+      </property>
+      <property name="BackColor">AliceBlue</property>
+    </property>
+  </property>
+  <property name="FixedLineWidth">2</property>
+  <property name="ActiveFilterString" />
+  <property name="ActiveFilterEnabled">true</property>
+  <property name="FindPanelVisible">false</property>
+  <property name="FindFilterText" />
+  <property name="Bands" iskey="true" value="0" />
+  <property name="FormatConditions" iskey="true" value="0" />
+  <property name="FilterConditions" iskey="true" value="0" />
+  <property name="FormatRules" iskey="true" value="0" />
+</XtraSerializer>

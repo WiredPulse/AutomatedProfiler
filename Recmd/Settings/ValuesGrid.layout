@@ -1,0 +1,86 @@
+﻿<XtraSerializer version="1.0" application="View">
+  <property name="#LayoutVersion" />
+  <property name="OptionsBehavior" isnull="true" iskey="true">
+    <property name="AllowIncrementalSearch">true</property>
+    <property name="AllowDeleteRows">False</property>
+    <property name="AllowAddRows">False</property>
+    <property name="Editable">false</property>
+  </property>
+  <property name="OptionsCustomization" isnull="true" iskey="true">
+    <property name="AllowQuickHideColumns">false</property>
+  </property>
+  <property name="OptionsView" isnull="true" iskey="true">
+    <property name="ShowAutoFilterRow">true</property>
+    <property name="EnableAppearanceOddRow">true</property>
+  </property>
+  <property name="OptionsMenu" isnull="true" iskey="true">
+    <property name="ShowConditionalFormattingItem">true</property>
+  </property>
+  <property name="FixedLineWidth">2</property>
+  <property name="IndicatorWidth">-1</property>
+  <property name="ColumnPanelRowHeight">-1</property>
+  <property name="RowSeparatorHeight">0</property>
+  <property name="FooterPanelHeight">-1</property>
+  <property name="HorzScrollVisibility">Auto</property>
+  <property name="VertScrollVisibility">Auto</property>
+  <property name="RowHeight">-1</property>
+  <property name="GroupRowHeight">-1</property>
+  <property name="GroupFormat">{0}: [#image]{1} {2}</property>
+  <property name="ChildGridLevelName" />
+  <property name="VertScrollTipFieldName" />
+  <property name="PreviewFieldName" />
+  <property name="GroupPanelText" />
+  <property name="NewItemRowText" />
+  <property name="LevelIndent">-1</property>
+  <property name="PreviewIndent">-1</property>
+  <property name="PreviewLineCount">-1</property>
+  <property name="ScrollStyle">LiveVertScroll, LiveHorzScroll</property>
+  <property name="FocusRectStyle">CellFocus</property>
+  <property name="HorzScrollStep">3</property>
+  <property name="ActiveFilterEnabled">true</property>
+  <property name="ViewCaptionHeight">-1</property>
+  <property name="Columns" iskey="true" value="7">
+    <property name="Item1" isnull="true" iskey="true">
+      <property name="Name">colData</property>
+      <property name="VisibleIndex">2</property>
+      <property name="Visible">true</property>
+    </property>
+    <property name="Item2" isnull="true" iskey="true">
+      <property name="Name">colValueName</property>
+      <property name="VisibleIndex">0</property>
+      <property name="Visible">true</property>
+    </property>
+    <property name="Item3" isnull="true" iskey="true">
+      <property name="Name">colValueType</property>
+      <property name="VisibleIndex">1</property>
+      <property name="Visible">true</property>
+    </property>
+    <property name="Item4" isnull="true" iskey="true">
+      <property name="Name">colValueTypeRaw</property>
+    </property>
+    <property name="Item5" isnull="true" iskey="true">
+      <property name="Name">colRawValue</property>
+    </property>
+    <property name="Item6" isnull="true" iskey="true">
+      <property name="Name">colValueSlack</property>
+      <property name="VisibleIndex">3</property>
+      <property name="Visible">true</property>
+    </property>
+    <property name="Item7" isnull="true" iskey="true">
+      <property name="Name">colRawValueSlack</property>
+    </property>
+  </property>
+  <property name="ViewCaption" />
+  <property name="BorderStyle">Default</property>
+  <property name="SynchronizeClones">true</property>
+  <property name="DetailTabHeaderLocation">Top</property>
+  <property name="Name">gvValues</property>
+  <property name="DetailHeight">350</property>
+  <property name="Tag" isnull="true" />
+  <property name="GroupSummary" iskey="true" value="0" />
+  <property name="ActiveFilterString" />
+  <property name="FormatRules" iskey="true" value="0" />
+  <property name="GroupSummarySortInfoState" />
+  <property name="FindFilterText" />
+  <property name="FindPanelVisible">false</property>
+</XtraSerializer>
