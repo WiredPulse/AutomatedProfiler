@@ -8,6 +8,7 @@ In order for this script to work, it will need to be in the same directory with 
 3) Download this repository. <br>
 4) Unzip the contents of the zip. <br>
 5) Verify that a folder called ‘profiler’ is what was unzipped.<br>
+6) Navigate to the Profile directory and type '.\profiler.ps1'
 <br>
 # Output
 Example output from this script is in the '__example_output.txt' within this repo.
