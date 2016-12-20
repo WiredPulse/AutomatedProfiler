@@ -1,25 +1,37 @@
 ﻿<#
     .SYNOPSIS  
-        This script will profile an image utilizing RegRipper, RECmd, and various PowerShell cmdlets. The output will be 		in a text file called 'profiler.txt' and will contain information about said system such as system info, 			networking settings, firewall details, user data, autorun, service, and mru keys. The returned data will not 			provide you everything you need to do forensics on the image but it will present a lot of the data that you would 	find yourself looking for.
+        This script will profile an image utilizing RegRipper, RECmd, and various PowerShell cmdlets. The output will be in a text file 
+        called 'profiler.txt' and will contain information about said system such as system info, networking settings, firewall details, 
+        user data, autorun, service, and mru keys. The returned data will not provide you everything you need to do forensics on the image 
+        but it will present a lot of the data that you would find yourself looking for.
 
-	In order for this script to work, it will need to be in the same directory with the other directories (RegRipper, 	RECmd, and plugins) it was downloaded with.
+	    In order for this script to work, it will need to be in the same directory with the other directories (RegRipper, RECmd, and plugins) 
+        it was downloaded with.
 
-The profiler script will parse a mounted image utilizing RegRipper, RECmd, and various PowerShell cmdlets. The output of the script will be in a text file called 'profiler.txt' and will contain information about said system such as system info, networking settings, firewall details, user data, autorun, service, and mru keys. The returned data will not provide you everything you need to do forensics on the image but it will present a lot of the data that you would find yourself looking for.
+        The profiler script will parse a mounted image utilizing RegRipper, RECmd, and various PowerShell cmdlets. The output of the script 
+        will be in a text file called 'profiler.txt' and will contain information about said system such as system info, networking settings, 
+        firewall details, user data, autorun, service, and mru keys. The returned data will not provide you everything you need to do forensics 
+        on the image but it will present a lot of the data that you would find yourself looking for.
 
-In order for this script to work, it will need to be in the same directory with the other supporting directories (RegRipper, RECmd, and plugins) that are included. A mounted image also needs to be available through FTK Imager.
+        In order for this script to work, it will need to be in the same directory with the other supporting directories (RegRipper, RECmd, and 
+        plugins) that are included. A mounted image also needs to be available through FTK Imager.
+
 
     .NOTES  
         File Name      : profiler.ps1
         Version        : v.0.1  
-        Author         : CW3 Tomlinson, Fernando
-        Email          : fernando.c.tomlinson2.mil@mail.mil
         Prerequisite   : PowerShell v2
         Created        : 06 July 16
 
     .USAGE
-	1) Mount an image using FTK Imager.
-	2) Take note of the drive letter assigned to the mounted image.
-	3) Navigate to the Profile directory and type '.\profiler.ps1'
+        1) Mount an image using FTK Imager. 
+        2) Take note of the drive letter assigned to the mounted image. 
+        3) Download this repository. 
+        4) Unzip the contents of the zip. 
+        5) Verify that a folder called ‘AutomatedProfiler-master’ is what was unzipped.
+        6) In PowerShell, navigate to the AutomatedProfiler-master directory and type '.\profiler.ps1'. 
+        7) When prompted, input the drive letter assigned to the image.
+        8) Analyze the profiler.txt file once the script completes.
     #>	
 
 # Variables
