@@ -5,7 +5,7 @@ The profiler script will parse an image utilizing RegRipper, RECmd, and various 
 In order for this script to work, it will need to be in the same directory with the other supporting directories (RegRipper, RECmd, and plugins) that are included. A mounted image also needs to be available through FTK Imager.<br><br>
 1) Mount an image using FTK Imager. <br>
 2) Take note of the drive letter assigned to the mounted image. <br>
-3) Download the script and supporting files. <br>
+3) Download this repository. <br>
 4) Unzip the contents of the zip. <br>
 5) Verify that a folder called ‘profiler’ is what was unzipped.<br>
 <br>
