@@ -7,8 +7,12 @@ In order for this script to work, it will need to be in the same directory with 
 2) Take note of the drive letter assigned to the mounted image. <br>
 3) Download this repository. <br>
 4) Unzip the contents of the zip. <br>
-5) Verify that a folder called ‘profiler’ is what was unzipped.<br>
-6) Navigate to the Profile directory and type '.\profiler.ps1'
+5) Verify that a folder called ‘AutomatedProfiler-master’ is what was unzipped.<br>
+6) In PowerShell, navigate to the AutomatedProfiler-master directory and type '.\profiler.ps1'
+7) When prompted, input the drive letter assigned to the image
+
+$drive_letter = read-host "Input drive letter of the attached drive with Registry hives (example - e:\)"
+
 <br>
 # Output
 Example output from this script is in the '__example_output.txt' within this repo.
