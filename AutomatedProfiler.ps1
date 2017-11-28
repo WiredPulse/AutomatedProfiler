@@ -42,7 +42,7 @@ $sam_hive = $drive_letter + '[root]\Windows\System32\config\sam'
 
 # SYSTEM INFORMATION
 echo "====================================================" >> profiler.txt
-echo "SYSTEM INFORMATION" > profiler.txt
+echo "SYSTEM INFORMATION" >> profiler.txt
 echo "====================================================" >> profiler.txt
 .\regripper\rip.exe -r $sys_hive -p compname 2>1 | select -skip 3 >> profiler.txt
 $shut_time = .\regripper\rip.exe -r $sys_hive -p shutdown 2>1 | select -skip 6
