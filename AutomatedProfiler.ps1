@@ -150,7 +150,7 @@ echo "====================================================" >> profiler.txt
 echo "====================================================" >> profiler.txt
 echo "INSTALLED APPLICATIONS (UNINSTALL KEY)" >> profiler.txt
 echo "====================================================" >> profiler.txt
-.\regripper\rip.exe -r c:\users\sansforensics408\Desktop\Software -p uninstall 2>1 | select -skip 3 >> profiler.txt
+.\regripper\rip.exe -r $soft_hive -p uninstall 2>1 | select -skip 3 >> profiler.txt
 
 # USER DETAILS
 ## AUTORUNS
