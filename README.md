@@ -10,10 +10,9 @@ In order for this script to work, it will need to be in the same directory with 
 4) Unzip the contents of the zip. <br>
 5) Verify that a folder called ‘AutomatedProfiler-master’ is what was unzipped.<br>
 6) In PowerShell, navigate to the AutomatedProfiler-master directory and type '.\profiler.ps1'.<br> 
-7) When prompted, input the drive letter assigned to the image.<br>
+7) When prompted, input the drive letter assigned to the image. This will be in the form of e:\, d:\, etc...<br>
 8) Analyze the profiler.txt file once the script completes.<br>
 
-$drive_letter = read-host "Input drive letter of the attached drive with Registry hives (example - e:\)"
 
 <br>
 # Output
