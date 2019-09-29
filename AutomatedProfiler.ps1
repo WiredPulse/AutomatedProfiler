@@ -64,7 +64,9 @@ if($drive.length -ne 3){
 if(-not(test-path $drive)){
     Write-Error -Message "Drive is not mounted to the filesystem"
 }
-
+else{
+    write-host -foreground yellow "[+] " -NoNewline; write-host -ForegroundColor cyan "Beginning Image Parsing..."
+}
 
 $sysHive = $drive + '[root]\Windows\System32\config\system'
 $softHive = $drive + '[root]\Windows\System32\config\software'
@@ -78,7 +80,7 @@ $dir = Split-Path $scriptpath
 cd $dir
 
 write-output " "
-write-host -foreground cyan "Working..."
+write-host -foreground yellow "[+] " -NoNewline; write-host -ForegroundColor cyan "10% Complete"
 write-output "====================================================" | out-file profiler.txt
 write-output "SYSTEM INFORMATION" | out-file profiler.txt -append
 write-output "====================================================" | out-file profiler.txt -append
@@ -89,13 +91,13 @@ write-output "$shutTime" | out-file profiler.txt -append
 $winn_cv = (& $rr -r "$softHive" -p winnt_cv) 2>1
 $winn_cv | Foreach{$_.Trim()} | Select-Object -skip 2 | select-string currentversion, currentbuild, installdate, registeredowner, systemroot, productname, computername, registeredorganization | out-file profiler.txt -append
 
-write-host -foreground cyan "Working..."
+write-host -foreground yellow "[+] " -NoNewline; write-host -ForegroundColor cyan "20% Complete"
 write-output "====================================================" | out-file profiler.txt -append
 write-output "TIMEZONE INFORMATION" | out-file profiler.txt -append
 write-output "====================================================" | out-file profiler.txt -append
 (& $rr -r "$sysHive" -p timezone) 2>1 | select -skip 6 | out-file profiler.txt -append
 
-write-host -foreground cyan "Working..."
+write-host -foreground yellow "[+] " -NoNewline; write-host -ForegroundColor cyan "30% Complete"
 write-output "====================================================" | out-file profiler.txt -append
 write-output "NETWORKING INFORMATION" | out-file profiler.txt -append
 write-output "====================================================" | out-file profiler.txt -append
@@ -106,7 +108,7 @@ write-output "NETWORK LIST" | out-file profiler.txt -append
 write-output "=-=-=-=-=-=-=-=-=-=-=-=-=-=" | out-file profiler.txt -append
 (& $rr -r "$softHive" -p networklist) 2>1 | select -skip 3 | out-file profiler.txt -append
 
-write-host -foreground cyan "Working..."
+write-host -foreground yellow "[+] " -NoNewline; write-host -ForegroundColor cyan "40% Complete"
 write-output "====================================================" | out-file profiler.txt -append
 write-output "FIREWALL DETAILS" | out-file profiler.txt -append
 write-output "====================================================" | out-file profiler.txt -append
@@ -124,7 +126,7 @@ write-output "LOCAL USER AND GROUP INFORMATION" | out-file profiler.txt -append
 write-output "====================================================" | out-file profiler.txt -append
 (& $rr -r "$samHive" -p samparse) 2>1 | select -skip 3 | out-file profiler.txt -append
 
-write-host -foreground cyan "Working..."
+write-host -foreground yellow "[+] " -NoNewline; write-host -ForegroundColor cyan "50% Complete"
 write-output "====================================================" | out-file profiler.txt -append
 write-output "AUTORUNS" | out-file profiler.txt -append
 write-output "====================================================" | out-file profiler.txt -append
@@ -154,7 +156,7 @@ write-output "====================================================" | out-file p
 $win = (& $rr -r "$softHive" -p winlogon) 2>1 | select -skip 3
 $win[0..($win.count - 3)] | out-file profiler.txt -append
 
-write-host -foreground cyan "Working..."
+write-host -foreground yellow "[+] " -NoNewline; write-host -ForegroundColor cyan "60% Complete"
 write-output "====================================================" | out-file profiler.txt -append
 write-output "USB MASS STORAGE DEVICE HISTORY" | out-file profiler.txt -append
 write-output "====================================================" | out-file profiler.txt -append
@@ -168,7 +170,7 @@ write-output "SERVICES STARTING AT BOOT (START KEY = 2)" | out-file profiler.txt
 write-output "====================================================" | out-file profiler.txt -append
 (& $rr -r "$sysHive" -p services) 2>1 | select -skip 3 | out-file profiler.txt -append
 
-write-host -foreground cyan "Working..."
+write-host -foreground yellow "[+] " -NoNewline; write-host -ForegroundColor cyan "70% Complete"
 write-output "LIST OF DRIVERS" | out-file profiler.txt -append
 write-output "=-=-=-=-=-=-=-=-=-=-=-=-=-=" | out-file profiler.txt -append
 (& $rr -r "$sysHive" -p drivers32) 2>1 | select -skip 3 | out-file profiler.txt -append
@@ -196,7 +198,7 @@ $cur_pwd2 = $pwd
 $userlist = (Get-ChildItem .\*\NTUSER.DAT).FullName
 cd $cur_pwd
 
-write-host -foreground cyan "Working..."
+write-host -foreground yellow "[+] " -NoNewline; write-host -ForegroundColor cyan "80% Complete"
 foreach ($user in $userlist)
 {
     write-output "=-=-=-=-=-=-=-=-=-=-=-=-=-=" | out-file profiler.txt -append
@@ -265,7 +267,7 @@ foreach ($user in $userlist)
         write-output " " | out-file profiler.txt -append
 }
 
-write-host -foreground cyan "Working..."
+write-host -foreground yellow "[+] " -NoNewline; write-host -ForegroundColor cyan "90% Complete"
 # VARIOUS MALWARE
 write-output "====================================================" | out-file profiler.txt -append
 write-output "OTHER MALWARE LOCATIONS" | out-file profiler.txt -append
@@ -279,6 +281,7 @@ cd '.\`[root`]'
 Copy-Item `$mft $cur_pwd
 cd $cur_pwd
 
-write-host -foreground cyan "Working..."
 (& $mft -f '.\$mft' --csv ".\" --csvf mft.csv)  2>1 | out-null
 Remove-Item '.\$mft'; remove-item .\1
+
+write-host -foreground yellow "[+] " -NoNewline; write-host -ForegroundColor cyan "Complete"
